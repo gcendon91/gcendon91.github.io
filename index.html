@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzalo Cendón - Android Portfolio</title>
+    <style>
+        :root { --primary: #28a745; --dark: #24292e; --light: #f6f8fa; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: var(--light); color: var(--dark); margin: 0; padding: 0; }
+        header { background: var(--dark); color: white; padding: 40px 20px; text-align: center; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .project-card { background: white; border: 1px solid #d1d5da; border-radius: 10px; display: flex; flex-wrap: wrap; overflow: hidden; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .project-img { flex: 1; min-width: 300px; background: #eee; display: flex; align-items: center; justify-content: center; }
+        .project-img img { width: 100%; height: auto; display: block; }
+        .project-info { flex: 1.5; padding: 30px; min-width: 300px; }
+        .btn { background: var(--primary); color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; margin-top: 15px; }
+        .btn-code { background: transparent; color: var(--dark); border: 1px solid #d1d5da; margin-left: 10px; }
+        .badge { background: #e1e4e8; padding: 4px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mis Proyectos Android</h1>
+    <p>Aplicaciones funcionales, modernas y listas para descargar.</p>
+</header>
+
+<div class="container">
+    <div class="project-card">
+        <div class="project-img">
+            <img src="https://raw.githubusercontent.com/gcendon91/DolarArg/master/screenshot.png" alt="DolarARG Monitor">
+        </div>
+        <div class="project-info">
+            <h2>📱 DolarARG Monitor</h2>
+            <p>Monitor de divisas en tiempo real. Consultá el Blue, MEP y Oficial con actualización instantánea.</p>
+            <div>
+                <span class="badge">Kotlin</span>
+                <span class="badge">Jetpack Compose</span>
+                <span class="badge">Retrofit</span>
+            </div>
+            <a href="https://github.com/gcendon91/DolarArg/releases/download/v1.0.0/DolarArg_v1.0.apk" class="btn">DESCARGAR APK</a>
+            <a href="https://github.com/gcendon91/DolarArg" class="btn btn-code">Ver Código</a>
+        </div>
+    </div>
+
+    <div class="project-card" style="opacity: 0.6;">
+        <div class="project-info">
+            <h2>📝 Próximamente: App de Gastos</h2>
+            <p>Gestión de finanzas personales con base de datos local (Room). En desarrollo...</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
