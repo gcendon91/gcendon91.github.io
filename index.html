@@ -15,7 +15,7 @@
         .project-info { flex: 1.5; padding: 30px; min-width: 300px; }
         .btn { background: var(--primary); color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; margin-top: 15px; }
         .btn-code { background: transparent; color: var(--dark); border: 1px solid #d1d5da; margin-left: 10px; }
-        .badge { background: #e1e4e8; padding: 4px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; }
+        .badge { background: #e1e4e8; padding: 4px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; line-height: 2.5; }
     </style>
 </head>
 <body>
@@ -27,22 +27,22 @@
 
 <div class="container">
     <div class="project-card">
-    <div class="project-img">
-        <img src="https://raw.githubusercontent.com/gcendon91/CineStack/master/screenshots/home_screen.png" alt="CineStack Home">
-    </div>
-    <div class="project-info">
-        <h2>🎬 CineStack</h2>
-        <p>Explorador de cine moderno con TMDB API. Incluye búsqueda en tiempo real, trailers, reparto detallado y disponibilidad de streaming en Argentina.</p>
-        <div>
-            <span class="badge">Kotlin</span>
-            <span class="badge">Jetpack Compose</span>
-            <span class="badge">MVVM</span>
-            <span class="badge">Room & DataStore</span>
+        <div class="project-img">
+            <img src="https://raw.githubusercontent.com/gcendon91/CineStack/master/screenshots/home_screen.png" alt="CineStack Home">
         </div>
-        <a href="https://github.com/gcendon91/CineStack/releases/download/v1.1.0/CineStack_v1.1.apk" class="btn">DESCARGAR APK</a>
-        <a href="https://github.com/gcendon91/CineStack" class="btn btn-code" target="_blank">Ver Código</a>
+        <div class="project-info">
+            <h2>🎬 CineStack</h2>
+            <p>Explorador de cine moderno con TMDB API. Incluye búsqueda en tiempo real, trailers, reparto detallado y disponibilidad de streaming en Argentina.</p>
+            <div>
+                <span class="badge">Kotlin</span>
+                <span class="badge">Jetpack Compose</span>
+                <span class="badge">MVVM</span>
+                <span class="badge">Room & DataStore</span>
+            </div>
+            <a href="https://github.com/gcendon91/CineStack/releases/download/v1.1.0/CineStack_v1.1.apk" class="btn">DESCARGAR APK</a>
+            <a href="https://github.com/gcendon91/CineStack" class="btn btn-code" target="_blank">Ver Código</a>
+        </div>
     </div>
-</div>
     
     <div class="project-card">
         <div class="project-img">
@@ -50,18 +50,20 @@
         </div>
         <div class="project-info">
             <h2>📱 DolarARG Monitor</h2>
-            <p>Monitor de divisas en tiempo real. Consultá el Blue, MEP y Oficial con actualización instantánea.</p>
+            <p>Monitor financiero con cotizaciones en tiempo real y análisis de tendencias. Incluye gráficos históricos con zoom dinámico, calculadora de conversión y métricas quincenales (Máx/Mín/Prom).</p>
             <div>
                 <span class="badge">Kotlin</span>
                 <span class="badge">Jetpack Compose</span>
+                <span class="badge">Vico Charts</span>
                 <span class="badge">Retrofit</span>
+                <span class="badge">MVVM</span>
             </div>
-            <a href="https://github.com/gcendon91/DolarArg/releases/download/v1.0.0/DolarArg_v1.0.apk" class="btn">DESCARGAR APK</a>
-            <a href="https://github.com/gcendon91/DolarArg" class="btn btn-code">Ver Código</a>
+            <a href="https://github.com/gcendon91/DolarArg/releases/download/v1.1.0/DolarArg_v1.1.0.apk" class="btn">DESCARGAR APK v1.1.0</a>
+            <a href="https://github.com/gcendon91/DolarArg" class="btn btn-code" target="_blank">Ver Código</a>
         </div>
     </div>
     
-    </div>
+</div>
 
 </body>
 </html>
