@@ -3,72 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gonzalo Cendón - Android Portfolio</title>
+    <title>Gonzalo Cendón - Android Developer</title>
     <style>
-        :root { --primary: #28a745; --dark: #24292e; --light: #f6f8fa; --accent: #1A237E; }
+        :root { --primary: #28a745; --dark: #24292e; --light: #f6f8fa; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: var(--light); color: var(--dark); margin: 0; padding: 0; }
         
-        header { background: var(--dark); color: white; padding: 60px 20px; text-align: center; }
-        header h1 { margin: 0; font-size: 2.5em; letter-spacing: -1px; }
-        header p { opacity: 0.8; font-size: 1.1em; }
+        header { background: var(--dark); color: white; padding: 50px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.2em; }
+        header p { opacity: 0.8; font-size: 1.1em; margin-top: 10px; }
 
         .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
 
-        /* ESTA ES LA MAGIA DEL GRID */
         .projects-grid { 
             display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-            gap: 30px; 
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+            gap: 25px; 
         }
 
         .project-card { 
             background: white; 
             border: 1px solid #d1d5da; 
-            border-radius: 12px; 
+            border-radius: 8px; 
             display: flex; 
-            flex-direction: column; /* Imagen arriba, texto abajo */
+            flex-direction: column;
             overflow: hidden; 
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
         }
-        
-        .project-card:hover { transform: translateY(-5px); }
 
         .project-img { 
-            background: #f0f0f0; 
-            height: 400px; /* Altura fija para que todas las tarjetas midan igual */
+            background: #eee; 
+            height: 350px; 
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            overflow: hidden;
             border-bottom: 1px solid #eee;
         }
         
-        .project-img img { 
-            height: 90%; /* La captura del celular resalta más así */
-            width: auto; 
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
+        .project-img img { height: 85%; width: auto; border-radius: 4px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
 
-        .project-info { padding: 25px; display: flex; flex-direction: column; flex-grow: 1; }
-        .project-info h2 { margin-top: 0; color: var(--dark); }
-        .project-info p { font-size: 0.95em; color: #586069; line-height: 1.5; flex-grow: 1; }
+        .project-info { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+        .project-info h2 { margin: 0 0 10px 0; font-size: 1.4em; }
+        .project-info p { font-size: 0.95em; color: #444; margin-bottom: 15px; flex-grow: 1; }
 
-        .badges { margin: 15px 0; }
-        .badge { background: #f1f8ff; color: #0366d6; padding: 5px 10px; border-radius: 6px; font-size: 11px; font-weight: bold; margin-right: 5px; margin-bottom: 5px; display: inline-block; border: 1px solid #c8e1ff; }
+        .badges { margin-bottom: 15px; }
+        .badge { background: #f1f8ff; color: #0366d6; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; margin-right: 5px; display: inline-block; border: 1px solid #c8e1ff; }
 
-        .btn-group { display: flex; gap: 10px; margin-top: 20px; }
-        .btn { flex: 1; text-align: center; background: var(--primary); color: white; padding: 12px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 0.9em; }
+        .btn-group { display: flex; gap: 10px; }
+        .btn { flex: 1; text-align: center; background: var(--primary); color: white; padding: 10px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.9em; }
         .btn-code { background: white; color: var(--dark); border: 1px solid #d1d5da; }
-        .btn-code:hover { background: #f6f8fa; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Gonzalo Cendón</h1>
-    <p>Android Developer | Jetpack Compose Specialist</p>
+    <p>Android Developer</p>
 </header>
 
 <div class="container">
@@ -79,15 +67,15 @@
                 <img src="https://raw.githubusercontent.com/gcendon91/StockMaster/master/screenshots/home_screen.png" alt="Stock Master">
             </div>
             <div class="project-info">
-                <h2>📦 Stock Master</h2>
-                <p>Inventario compartido en tiempo real. Sincronización en la nube, invitaciones por código y diseño premium.</p>
+                <h2>Stock Master</h2>
+                <p>Inventario compartido con sincronización en tiempo real vía Firebase y autenticación con Google.</p>
                 <div class="badges">
                     <span class="badge">FIREBASE</span>
                     <span class="badge">COMPOSE</span>
-                    <span class="badge">AUTH</span>
+                    <span class="badge">MVVM</span>
                 </div>
                 <div class="btn-group">
-                    <a href="https://github.com/gcendon91/StockMaster/releases/download/v1.0.0/StockMaster_v1.0.0.apk" class="btn">APK</a>
+                    <a href="https://github.com/gcendon91/StockMaster/releases/download/v1.0.0/app-release.apk" class="btn">APK</a>
                     <a href="https://github.com/gcendon91/StockMaster" class="btn btn-code" target="_blank">Código</a>
                 </div>
             </div>
@@ -98,12 +86,12 @@
                 <img src="https://raw.githubusercontent.com/gcendon91/CineStack/master/screenshots/home_screen.png" alt="CineStack">
             </div>
             <div class="project-info">
-                <h2>🎬 CineStack</h2>
-                <p>Explorador de cine con TMDB API. Búsqueda avanzada, trailers y gestión de favoritos local.</p>
+                <h2>CineStack</h2>
+                <p>Buscador de películas utilizando la API de TMDB. Gestión de favoritos y detalles técnicos del reparto.</p>
                 <div class="badges">
                     <span class="badge">RETROFIT</span>
                     <span class="badge">ROOM</span>
-                    <span class="badge">MVVM</span>
+                    <span class="badge">COMPOSE</span>
                 </div>
                 <div class="btn-group">
                     <a href="https://github.com/gcendon91/CineStack/releases/download/v1.1.0/CineStack_v1.1.apk" class="btn">APK</a>
@@ -117,12 +105,12 @@
                 <img src="https://raw.githubusercontent.com/gcendon91/DolarArg/master/screenshot.png" alt="DolarArg">
             </div>
             <div class="project-info">
-                <h2>📱 DolarARG Monitor</h2>
-                <p>Cotizaciones en tiempo real con gráficos históricos dinámicos y análisis de tendencias financieras.</p>
+                <h2>DolarARG</h2>
+                <p>Monitor de cotizaciones con gráficos históricos y calculadora de conversión de divisas.</p>
                 <div class="badges">
-                    <span class="badge">VICO CHARTS</span>
+                    <span class="badge">VICO</span>
+                    <span class="badge">RETROFIT</span>
                     <span class="badge">CLEAN ARCH</span>
-                    <span class="badge">API</span>
                 </div>
                 <div class="btn-group">
                     <a href="https://github.com/gcendon91/DolarArg/releases/download/v1.1.0/DolarArg_v1.1.0.apk" class="btn">APK</a>
